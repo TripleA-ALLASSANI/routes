@@ -1,0 +1,8 @@
+.searchBar {
+    padding: 2rem 1rem;
+}
+
+.searchBar input {
+    font-size: 1.2rem;
+    margin: 0;
+}
