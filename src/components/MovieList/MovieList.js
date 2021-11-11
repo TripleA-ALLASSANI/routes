@@ -3,7 +3,7 @@ import MovieCard from "../MovieCard/MovieCard";
 
 const MovieList = (props) => {
     return (
-    <div className="tc bg-black ma0 pa4 min-vh-100">
+    <div className="tc bg-black ma0 pa4 min-vh-70">
         {props.movies.map((movie, index) => (
         <MovieCard 
         description={movie.description}
