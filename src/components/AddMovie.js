@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardImg } from 'reactstrap';
+import { Card } from 'reactstrap';
+import {Button} from '@material-ui/core';
+import { AddBox } from '@material-ui/icons';
 
 import ModalComp from './ModalComp';
 
@@ -10,13 +12,15 @@ const AddMovie = ({ handleAdd }) => {
   return (
     <div className='row justify-content-center mt-3'>
       <Card onClick={() => setShow(true)}>
-        <CardImg
-          top
-          width='100%'
-          style={{ height: `300px` }}
-          src={require("./add.png")}
-          alt='Card image cap'
-        />
+
+          <Button
+              variant="contained"
+              startIcon={<AddBox />}
+              color="primary"
+              target="__blank"
+            >
+              Add Movie
+            </Button>
       </Card>
       {show && (
         <ModalComp isOpen={show} toggle={toggleShow} handleAdd={handleAdd} />

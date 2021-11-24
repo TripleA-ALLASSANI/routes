@@ -12,7 +12,6 @@ const MovieCard = ({ movie: { id, title, trailerlink, posterUrl, description, ra
           <Link className="btn btn-primary" 
           to={{
             pathname: `/movie/${id}`, customObject: id
-            //state: { trailerlink: {trailerlink}, description: {description}, posterUrl: {posterUrl}}
           }}
           >
             <CardTitle>
