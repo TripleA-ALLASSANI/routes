@@ -14,7 +14,7 @@ const AddMovie = ({ handleAdd }) => {
           top
           width='100%'
           style={{ height: `300px` }}
-          src={require('../assets/icon/add.png')}
+          src={require("./add.png")}
           alt='Card image cap'
         />
       </Card>
